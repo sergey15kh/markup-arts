@@ -6790,6 +6790,7 @@ readers do not read off random characters that represent icons */
 }
 .section-services .layout .services__wrapper_cards .card-mobile {
   display: none;
+  margin-bottom: 50px;
 }
 @media (min-width: 375px) and (max-width: 767px) {
   .section-services .layout .services__wrapper_cards .card-mobile {
