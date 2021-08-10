@@ -1,0 +1,101 @@
+.section-portfolio {
+    padding-top: 30px;
+    .layout {
+        .portfolio-items {
+            margin-top: 50px;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                li {
+                    margin-bottom: 30px;
+                    position: relative;
+                    width: 250px;
+                    height: 250px;
+                    overflow: hidden;
+
+                    a {
+                        display: none;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        transition: all 400ms ease-in-out;
+                        z-index: 10;
+                        width: 180px;
+                        height: 40px;
+                        border: 1px solid $color3;
+                        line-height: 40px;
+                        text-align: center;
+                        background-image: linear-gradient($color3, $color3);
+                        background-position: 50% 50%;
+                        background-repeat: no-repeat;
+                        background-size: 0% 100%;
+                        transition: background-size 500ms, color 500ms,;
+                        color: $color3;
+                        font-weight: 500;
+        
+                        &:hover {
+                            background-size: 100% 100%;
+                            color: $color4;
+                            border: 1px solid $color3;
+                        } 
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: -250px;
+                        background-color: rgba($color: $color1, $alpha: 0.8);
+                        width: 250px;
+                        height: 250px;
+                        transition: all 400ms ease-in-out;
+                        z-index: 5;
+                    }
+
+                    &:hover::after {
+                        left: 0;
+                    }
+
+                    &:hover {
+                        a {
+                            display: block;
+                        }
+                    }
+
+                    @media (min-width: 1360px) and (max-width: 1439px) {
+                        &:nth-child(even) {
+                            display: none;
+                        }
+
+                        width: 240px;
+                    }
+                }
+            }
+
+            .all-works {
+                display: block;
+                position: relative;
+                color: $color1;
+                width: 180px;
+                height: 40px;
+                border: 1px solid $color1;
+                line-height: 40px;
+                text-align: center;
+                background-image: linear-gradient($color1, $color1);
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                background-size: 0% 100%;
+                transition: background-size 500ms, color 500ms,;
+                margin: 20px auto auto auto;
+
+                &:hover {
+                    background-size: 100% 100%;
+                    color: #fff;
+                    border: 1px solid $color2;
+                }
+            }
+        }
+    }
+}

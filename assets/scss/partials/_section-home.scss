@@ -1,0 +1,121 @@
+.section-home {
+    position: relative;
+    .layout {
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+
+        @media (min-width: 1360px) and (max-width: 1439px) {
+            left: 60%;
+        }
+
+        @media (min-width: 375px) and (max-width: 767px) {
+            top: 150px;
+        }
+
+/*         @media (min-width: 375px) and (max-width: 767px) {
+            display: none;
+        } */
+        
+        .home__text {
+            max-width: 900px;
+
+            @media (min-width: 375px) and (max-width: 767px) {
+                text-align: center;
+            }
+            h1 {
+                color: #ffffff;
+                font-size: 40px;
+                text-transform: uppercase;
+
+                @media (min-width: 375px) and (max-width: 767px) {
+                    font-size: 28px;
+                }
+            }
+            h2 {
+                color: #ffffff;
+                font-size: 30px;
+                margin-top: 20px;
+                font-family: 'Open Sans Condensed', sans-serif;
+                font-weight: 300;
+
+                @media (min-width: 375px) and (max-width: 767px) {
+                    font-size: 20px;
+                }
+            }
+            .home-btn {
+                position: relative;
+                color: $color3;
+                display: block;
+                margin-top: 60px;
+                width: 180px;
+                height: 40px;
+                border: 1px solid $color3;
+                line-height: 40px;
+                text-align: center;
+                background-image: linear-gradient($color3, $color3);
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                background-size: 0% 100%;
+                transition: background-size 500ms, color 500ms;
+                font-weight: 600;
+
+                @media (min-width: 375px) and (max-width: 767px) {
+                    margin: 80px auto auto auto;
+                }
+
+                &:hover {
+                    background-size: 100% 100%;
+                    color: $color1;
+                    border: 1px solid $color3;
+                }
+            }
+        }
+    
+        .home__nav {
+            margin-top: 120px;
+
+            @media (min-width: 375px) and (max-width: 767px) {
+                margin-top: 100px;
+            }
+            ul {
+                display: flex;
+                li {
+                    width: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 30px;
+                    text-align: center;
+
+                    @media (min-width: 375px) and (max-width: 767px) {
+                        margin-right: 0;
+                    }
+                    .fas, .far {
+                        color: #ffffff;
+                        margin-bottom: 20px;
+                        font-size: 40px;
+                        @media (min-width: 375px) and (max-width: 767px) {
+                            font-size: 30px;
+                        }
+                    }
+    
+                    a {
+                        color: #ffffff;
+                        font-size: 30px;
+                        font-family: 'Open Sans Condensed', sans-serif;
+                        padding-left: 15px;
+
+                        @media (min-width: 375px) and (max-width: 767px) {
+                            font-size: 20px;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

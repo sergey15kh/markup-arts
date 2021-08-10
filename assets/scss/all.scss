@@ -1,0 +1,21 @@
+/* SCSS Compiled */
+@import "global/reset.scss";
+@import "global/mixins.scss";
+@import "global/var.scss";
+@import "global/styles.scss";
+
+/* FONTAWESOME */
+@import "fontawesome_scss/brands.scss";
+@import "fontawesome_scss/fontawesome.scss";
+@import "fontawesome_scss/regular.scss";
+@import "fontawesome_scss/solid.scss";
+
+/* SCSS MAIN */
+@import "partials/header.scss";
+@import "partials/section-home.scss";
+@import "partials/section-services.scss";
+@import "partials/section-portfolio.scss";
+@import "partials/section-testimonials.scss";
+@import "partials/section-application.scss";
+@import "partials/section-footer.scss";
+@import "partials/slick-theme.scss";

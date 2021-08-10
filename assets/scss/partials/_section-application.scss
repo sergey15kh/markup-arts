@@ -1,0 +1,60 @@
+.section-application {
+    .layout {
+        .application-item {
+            width: 500px;
+            height: auto;
+            margin: 50px auto auto auto;
+            border: 10px solid $color1;
+            border-radius: 3px;
+            padding: 10px 10px;
+
+            @media (min-width: 1360px) and (max-width: 1439px) {
+                margin: 20px auto auto auto;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                input {
+                    border: 1px solid rgba($color: #000000, $alpha: 0.1);
+                    height: 40px;
+                    margin-bottom: 10px;
+                    padding: 0px 10px;
+                    font-size: 14px;
+                }
+                label {
+                    border: 1px solid rgba($color: #000000, $alpha: 0.1);
+
+                    input {
+                        height: 20px;
+                        font-size: 14px;
+                    }
+                }
+                textarea {
+                    resize: none;
+                    height: 200px;
+                    padding: 10px 10px;
+                }
+                button {
+                    width: 200px;
+                    height: 40px;
+                    margin: 10px auto 10px auto;
+                    border: 1px solid $color3;
+                    line-height: 40px;
+                    text-align: center;
+                    background-image: linear-gradient($color1, $color1);
+                    background-position: 50% 50%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 100%;
+                    transition: background-size 500ms, color 500ms,;
+    
+                    &:hover {
+                        background-size: 100% 100%;
+                        color: #fff;
+                        border: 1px solid $color3;
+                    }
+                }
+            }
+        }
+    }
+}
