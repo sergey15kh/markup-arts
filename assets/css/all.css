@@ -6608,7 +6608,7 @@ readers do not read off random characters that represent icons */
 }
 @media (min-width: 375px) and (max-width: 767px) {
   .section-home .layout .home__nav {
-    margin-top: 100px;
+    margin-top: 70px;
   }
 }
 .section-home .layout .home__nav ul {
