@@ -95,6 +95,10 @@
                     }
                 }
                 .card-footer {
+                    @media (min-width: 375px) and (max-width: 767px) {
+                        display: none;
+                    }
+                    
                     a {
                         display: block;
                         position: relative;
@@ -116,10 +120,6 @@
                             color: #fff;
                             border: 1px solid $color2;
                         }
-                    }
-
-                    @media (min-width: 375px) and (max-width: 767px) {
-                        display: none;
                     }
                 }
 

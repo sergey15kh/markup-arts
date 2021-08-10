@@ -6753,6 +6753,11 @@ readers do not read off random characters that represent icons */
     font-size: 12px;
   }
 }
+@media (min-width: 375px) and (max-width: 767px) {
+  .section-services .layout .services__wrapper_cards .cards .card-footer {
+    display: none;
+  }
+}
 .section-services .layout .services__wrapper_cards .cards .card-footer a {
   display: block;
   position: relative;
@@ -6773,11 +6778,6 @@ readers do not read off random characters that represent icons */
   background-size: 100% 100%;
   color: #fff;
   border: 1px solid #f7ce00;
-}
-@media (min-width: 375px) and (max-width: 767px) {
-  .section-services .layout .services__wrapper_cards .cards .card-footer {
-    display: none;
-  }
 }
 .section-services .layout .services__wrapper_cards .cards:hover {
   transform: translate(0px, -30px);
