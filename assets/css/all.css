@@ -150,7 +150,7 @@ body {
 }
 @media (min-width: 375px) and (max-width: 767px) {
   #particles-js {
-    height: 500px;
+    height: 600px;
   }
 }
 
@@ -6773,6 +6773,11 @@ readers do not read off random characters that represent icons */
   background-size: 100% 100%;
   color: #fff;
   border: 1px solid #f7ce00;
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .section-services .layout .services__wrapper_cards .cards .card-footer {
+    display: none;
+  }
 }
 .section-services .layout .services__wrapper_cards .cards:hover {
   transform: translate(0px, -30px);
