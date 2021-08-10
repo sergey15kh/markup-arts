@@ -150,7 +150,7 @@ body {
 }
 @media (min-width: 375px) and (max-width: 767px) {
   #particles-js {
-    height: 600px;
+    height: 500px;
   }
 }
 
