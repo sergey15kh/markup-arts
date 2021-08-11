@@ -19,7 +19,7 @@ $(document).ready(function() {
 
 // ScrollBar
 $(function() {
-    $(".seo-block").mCustomScrollbar({
+    $(".seo-block, .mobile-content").mCustomScrollbar({
         theme:"dark"
     });
 });

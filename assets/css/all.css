@@ -115,12 +115,11 @@ body {
   font-weight: 400;
 }
 
-@media (min-width: 375px) and (max-width: 767px) {
-  #fullpage {
-    display: none;
-  }
-}
-
+/* #fullpage {
+	@media (min-width: 375px) and (max-width: 767px) {
+		display: none;
+	}
+} */
 @media (min-width: 1024px) and (max-width: 1920px) {
   #mobile-content {
     display: none;
@@ -159,11 +158,6 @@ body {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-}
-@media (min-width: 375px) and (max-width: 767px) {
-  #particles-js {
-    height: 600px;
-  }
 }
 
 .scroll-btn {
@@ -6663,19 +6657,19 @@ readers do not read off random characters that represent icons */
   margin-right: 0;
 }
 
-.section-services .layout .services__wrapper_cards {
+.section-services .layout .services__wrapper_cards, .mob-section-home .layout .services__wrapper_cards {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .section-services .layout .services__wrapper_cards {
+  .section-services .layout .services__wrapper_cards, .mob-section-home .layout .services__wrapper_cards {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
   }
 }
-.section-services .layout .services__wrapper_cards .cards {
+.section-services .layout .services__wrapper_cards .cards, .mob-section-home .layout .services__wrapper_cards .cards {
   width: 280px;
   height: 400px;
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -6688,44 +6682,44 @@ readers do not read off random characters that represent icons */
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 @media (min-width: 1360px) and (max-width: 1439px) {
-  .section-services .layout .services__wrapper_cards .cards {
+  .section-services .layout .services__wrapper_cards .cards, .mob-section-home .layout .services__wrapper_cards .cards {
     width: 250px;
     height: 400px;
   }
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .section-services .layout .services__wrapper_cards .cards {
+  .section-services .layout .services__wrapper_cards .cards, .mob-section-home .layout .services__wrapper_cards .cards {
     display: none;
     height: 60vh;
   }
 }
-.section-services .layout .services__wrapper_cards .cards .card-header {
+.section-services .layout .services__wrapper_cards .cards .card-header, .mob-section-home .layout .services__wrapper_cards .cards .card-header {
   margin-bottom: 20px;
   margin-top: 20px;
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .section-services .layout .services__wrapper_cards .cards .card-header {
+  .section-services .layout .services__wrapper_cards .cards .card-header, .mob-section-home .layout .services__wrapper_cards .cards .card-header {
     margin-bottom: 10px;
     margin-top: 10px;
   }
 }
-.section-services .layout .services__wrapper_cards .cards .card-header span {
+.section-services .layout .services__wrapper_cards .cards .card-header span, .mob-section-home .layout .services__wrapper_cards .cards .card-header span {
   font-size: 16px;
   position: relative;
   text-transform: uppercase;
   font-weight: 600;
 }
 @media (min-width: 1360px) and (max-width: 1439px) {
-  .section-services .layout .services__wrapper_cards .cards .card-header span {
+  .section-services .layout .services__wrapper_cards .cards .card-header span, .mob-section-home .layout .services__wrapper_cards .cards .card-header span {
     font-size: 14px;
   }
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .section-services .layout .services__wrapper_cards .cards .card-header span {
+  .section-services .layout .services__wrapper_cards .cards .card-header span, .mob-section-home .layout .services__wrapper_cards .cards .card-header span {
     font-size: 14px;
   }
 }
-.section-services .layout .services__wrapper_cards .cards .card-header span::after {
+.section-services .layout .services__wrapper_cards .cards .card-header span::after, .mob-section-home .layout .services__wrapper_cards .cards .card-header span::after {
   content: "";
   width: 100%;
   height: 2px;
@@ -6734,43 +6728,43 @@ readers do not read off random characters that represent icons */
   bottom: -10px;
   left: 0;
 }
-.section-services .layout .services__wrapper_cards .cards .card-body {
+.section-services .layout .services__wrapper_cards .cards .card-body, .mob-section-home .layout .services__wrapper_cards .cards .card-body {
   margin-top: 40px;
   height: 250px;
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .section-services .layout .services__wrapper_cards .cards .card-body {
+  .section-services .layout .services__wrapper_cards .cards .card-body, .mob-section-home .layout .services__wrapper_cards .cards .card-body {
     margin-top: 20px;
     max-height: 250px;
   }
 }
-.section-services .layout .services__wrapper_cards .cards .card-body ul {
+.section-services .layout .services__wrapper_cards .cards .card-body ul, .mob-section-home .layout .services__wrapper_cards .cards .card-body ul {
   display: flex;
   flex-direction: column;
 }
-.section-services .layout .services__wrapper_cards .cards .card-body ul li {
+.section-services .layout .services__wrapper_cards .cards .card-body ul li, .mob-section-home .layout .services__wrapper_cards .cards .card-body ul li {
   margin-bottom: 20px;
   margin-left: 20px;
   list-style: disc;
   font-size: 14px;
 }
 @media (min-width: 1360px) and (max-width: 1439px) {
-  .section-services .layout .services__wrapper_cards .cards .card-body ul li {
+  .section-services .layout .services__wrapper_cards .cards .card-body ul li, .mob-section-home .layout .services__wrapper_cards .cards .card-body ul li {
     font-size: 13px;
   }
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .section-services .layout .services__wrapper_cards .cards .card-body ul li {
+  .section-services .layout .services__wrapper_cards .cards .card-body ul li, .mob-section-home .layout .services__wrapper_cards .cards .card-body ul li {
     margin-bottom: 10px;
     font-size: 12px;
   }
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .section-services .layout .services__wrapper_cards .cards .card-footer {
+  .section-services .layout .services__wrapper_cards .cards .card-footer, .mob-section-home .layout .services__wrapper_cards .cards .card-footer {
     display: none;
   }
 }
-.section-services .layout .services__wrapper_cards .cards .card-footer a {
+.section-services .layout .services__wrapper_cards .cards .card-footer a, .mob-section-home .layout .services__wrapper_cards .cards .card-footer a {
   display: block;
   position: relative;
   color: #0158b5;
@@ -6786,26 +6780,26 @@ readers do not read off random characters that represent icons */
   transition: background-size 500ms, color 500ms;
   margin: 20px auto auto auto;
 }
-.section-services .layout .services__wrapper_cards .cards .card-footer a:hover {
+.section-services .layout .services__wrapper_cards .cards .card-footer a:hover, .mob-section-home .layout .services__wrapper_cards .cards .card-footer a:hover {
   background-size: 100% 100%;
   color: #fff;
   border: 1px solid #f7ce00;
 }
-.section-services .layout .services__wrapper_cards .cards:hover {
+.section-services .layout .services__wrapper_cards .cards:hover, .mob-section-home .layout .services__wrapper_cards .cards:hover {
   transform: translate(0px, -30px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .section-services .layout .services__wrapper_cards .cards:hover {
+  .section-services .layout .services__wrapper_cards .cards:hover, .mob-section-home .layout .services__wrapper_cards .cards:hover {
     transform: translate(0px, 0px);
   }
 }
-.section-services .layout .services__wrapper_cards .card-mobile {
+.section-services .layout .services__wrapper_cards .card-mobile, .mob-section-home .layout .services__wrapper_cards .card-mobile {
   display: none;
   margin-bottom: 50px;
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .section-services .layout .services__wrapper_cards .card-mobile {
+  .section-services .layout .services__wrapper_cards .card-mobile, .mob-section-home .layout .services__wrapper_cards .card-mobile {
     display: block;
   }
 }
