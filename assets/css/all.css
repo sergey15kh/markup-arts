@@ -6368,7 +6368,7 @@ readers do not read off random characters that represent icons */
 }
 @media (min-width: 375px) and (max-width: 767px) {
   .header {
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
   }
 }
 .header .layout {
