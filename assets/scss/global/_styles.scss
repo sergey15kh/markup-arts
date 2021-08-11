@@ -8,6 +8,18 @@ body {
 
 #wrapper {}
 
+#fullpage {
+	@media (min-width: 375px) and (max-width: 767px) {
+		display: none;
+	}
+}
+
+#mobile-content {
+	@media (min-width: 1024px) and (max-width: 1920px) {
+		display: none;
+	}
+}
+
 .layout {
 	@include box;
 	max-width:1370px;

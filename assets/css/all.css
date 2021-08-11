@@ -115,6 +115,18 @@ body {
   font-weight: 400;
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+  #fullpage {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+  #mobile-content {
+    display: none;
+  }
+}
+
 .layout {
   width: 100%;
   height: auto;
@@ -6524,10 +6536,10 @@ readers do not read off random characters that represent icons */
   margin-right: 0px;
 }
 
-.section-home {
+.section-home, .mobile-version {
   position: relative;
 }
-.section-home .layout {
+.section-home .layout, .mobile-version .layout {
   position: absolute;
   top: 200px;
   left: 50%;
@@ -6537,34 +6549,34 @@ readers do not read off random characters that represent icons */
           } */
 }
 @media (min-width: 1360px) and (max-width: 1439px) {
-  .section-home .layout {
+  .section-home .layout, .mobile-version .layout {
     left: 60%;
   }
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .section-home .layout {
+  .section-home .layout, .mobile-version .layout {
     top: 150px;
   }
 }
-.section-home .layout .home__text {
+.section-home .layout .home__text, .mobile-version .layout .home__text {
   max-width: 900px;
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .section-home .layout .home__text {
+  .section-home .layout .home__text, .mobile-version .layout .home__text {
     text-align: center;
   }
 }
-.section-home .layout .home__text h1 {
+.section-home .layout .home__text h1, .mobile-version .layout .home__text h1 {
   color: #ffffff;
   font-size: 40px;
   text-transform: uppercase;
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .section-home .layout .home__text h1 {
+  .section-home .layout .home__text h1, .mobile-version .layout .home__text h1 {
     font-size: 28px;
   }
 }
-.section-home .layout .home__text h2 {
+.section-home .layout .home__text h2, .mobile-version .layout .home__text h2 {
   color: #ffffff;
   font-size: 30px;
   margin-top: 20px;
@@ -6572,11 +6584,11 @@ readers do not read off random characters that represent icons */
   font-weight: 300;
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .section-home .layout .home__text h2 {
+  .section-home .layout .home__text h2, .mobile-version .layout .home__text h2 {
     font-size: 20px;
   }
 }
-.section-home .layout .home__text .home-btn {
+.section-home .layout .home__text .home-btn, .mobile-version .layout .home__text .home-btn {
   position: relative;
   color: #ffffff;
   display: block;
@@ -6594,27 +6606,27 @@ readers do not read off random characters that represent icons */
   font-weight: 600;
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .section-home .layout .home__text .home-btn {
+  .section-home .layout .home__text .home-btn, .mobile-version .layout .home__text .home-btn {
     margin: 80px auto auto auto;
   }
 }
-.section-home .layout .home__text .home-btn:hover {
+.section-home .layout .home__text .home-btn:hover, .mobile-version .layout .home__text .home-btn:hover {
   background-size: 100% 100%;
   color: #0158b5;
   border: 1px solid #ffffff;
 }
-.section-home .layout .home__nav {
+.section-home .layout .home__nav, .mobile-version .layout .home__nav {
   margin-top: 120px;
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .section-home .layout .home__nav {
+  .section-home .layout .home__nav, .mobile-version .layout .home__nav {
     margin-top: 70px;
   }
 }
-.section-home .layout .home__nav ul {
+.section-home .layout .home__nav ul, .mobile-version .layout .home__nav ul {
   display: flex;
 }
-.section-home .layout .home__nav ul li {
+.section-home .layout .home__nav ul li, .mobile-version .layout .home__nav ul li {
   width: 200px;
   display: flex;
   flex-direction: column;
@@ -6622,32 +6634,32 @@ readers do not read off random characters that represent icons */
   text-align: center;
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .section-home .layout .home__nav ul li {
+  .section-home .layout .home__nav ul li, .mobile-version .layout .home__nav ul li {
     margin-right: 0;
   }
 }
-.section-home .layout .home__nav ul li .fas, .section-home .layout .home__nav ul li .far {
+.section-home .layout .home__nav ul li .fas, .section-home .layout .home__nav ul li .far, .mobile-version .layout .home__nav ul li .fas, .mobile-version .layout .home__nav ul li .far {
   color: #ffffff;
   margin-bottom: 20px;
   font-size: 40px;
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .section-home .layout .home__nav ul li .fas, .section-home .layout .home__nav ul li .far {
+  .section-home .layout .home__nav ul li .fas, .section-home .layout .home__nav ul li .far, .mobile-version .layout .home__nav ul li .fas, .mobile-version .layout .home__nav ul li .far {
     font-size: 30px;
   }
 }
-.section-home .layout .home__nav ul li a {
+.section-home .layout .home__nav ul li a, .mobile-version .layout .home__nav ul li a {
   color: #ffffff;
   font-size: 30px;
   font-family: "Open Sans Condensed", sans-serif;
   padding-left: 15px;
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .section-home .layout .home__nav ul li a {
+  .section-home .layout .home__nav ul li a, .mobile-version .layout .home__nav ul li a {
     font-size: 20px;
   }
 }
-.section-home .layout .home__nav ul li:last-child {
+.section-home .layout .home__nav ul li:last-child, .mobile-version .layout .home__nav ul li:last-child {
   margin-right: 0;
 }
 
@@ -7229,3 +7241,5 @@ readers do not read off random characters that represent icons */
   color: black;
   opacity: 0.75;
 }
+
+/* SCSS MOBILE */
