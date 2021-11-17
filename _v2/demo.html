@@ -1,0 +1,131 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="./css/all.css" type="text/css" />
+	<link rel="stylesheet" href="./sass/fonts.css" type="text/css" />
+
+	<title>WebLine | Demo</title>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-196800868-1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-196800868-1');
+	</script>
+</head>
+
+<body>
+
+	<style>
+		tr {
+			height: 60px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 10px;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+		}
+
+		tr:nth-child(2n) {
+			background-color: #efefef;
+		}
+
+		td {
+			font-family: 'Roboto', sans-serif;
+			font-size: 18px;
+			text-transform: lowercase;
+		}
+
+		td:nth-child(2n) {
+			background-color: #f77000;
+			color: #fff;
+			padding: 5px 10px;
+			border-radius: 3px;
+			font-size: 16px;
+		}
+
+		td a {
+			color: #fff;
+			cursor: pointer;
+		}
+
+		td:hover:nth-child(2n) {
+			background-color: #e66a04;
+		}
+
+		.back-home {
+			position: absolute;
+			top: 10px;
+			left: 45%;
+		}
+
+		@media (min-width: 375px) and (max-width: 767px) {
+			.back-home {
+			position: absolute;
+			top: 10px;
+			left: 35%;
+			}
+		}
+
+		@media (min-width: 320px) and (max-width: 374px) {
+			.back-home {
+			position: absolute;
+			top: 10px;
+			left: 33%;
+			}
+		}
+
+		.back-home-btn {
+			font-size: 16px;
+			background-color: #f77000;
+			color: #fff;
+			padding: 2px 10px;
+		}
+
+	</style>
+
+	<div class="layout-port">
+	<table style="width: 100%;">
+		<tr>
+			<td>name</td>
+			<td>View</td>
+		</tr>
+		<tr>
+			<td>Pastars Elena</td>
+			<td><a href="./demo/pastars-elena/pastars-elena.html">demo</a></td>
+		</tr>
+		<tr>
+			<td>Portfolio</td>
+			<td><a href="./demo/portfolio/portfolio.html">demo</a></td>
+		</tr>
+		<tr>
+			<td>Macadami</td>
+			<td><a href="./demo/macadamia/macadamia.html">demo</a></td>
+		</tr>
+		<tr>
+			<td>PochiniKa</td>
+			<td><a href="./demo/pochinika/pochinika.html">demo</a></td>
+		</tr>
+	</table>
+	</div>
+
+	<div class="back-home">
+		<a href="/" class="back-home-btn">back to home</a>
+	</div>
+
+	<script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
