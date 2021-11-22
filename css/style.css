@@ -3411,6 +3411,10 @@ footer p {
 	top: 6px;
 }
 
+.c-info li a {
+	color: #999;
+}
+
 .c-info li {
 	padding-left: 25px;
 	position: relative;
@@ -5744,8 +5748,8 @@ margin-right:5px;
 
 #header2 .navbar-brand > img {
     display: block;
-    width: 152px;
-    margin: -9px auto 0px;
+    width: 220px;
+    margin: -15px auto 0px;
 }
 
 #header2 header {
